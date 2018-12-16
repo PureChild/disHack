@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Eco-Trip</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <!-- 구글 차트 -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  	<script type="text/javascript">
+  		google.charts.load('current', {'packages':['corechart']});
+  		google.charts.setOnLoadCallback(drawVisualization);
+
+  		function drawVisualization() {
+  			var data = google.visualization.arrayToDataTable([
+          ['연도', '전국', '제주도'],
+          ['2000', 0.97, 1.04],
+          ['2001', 1.01, 1.13],
+          ['2002', 1.03, 1.18],
+          ['2003', 1.05, 1.14],
+          ['2004', 1.03, 1.13],
+          ['2005', 0.99, 1.15],
+          ['2006', 1.00, 1.04],
+          ['2007', 1.02, 1.06],
+          ['2008', 1.05, 1.08],
+          ['2009', 1.02, 1.11],
+          ['2010', 0.97, 1.12],
+          ['2011', 0.96, 1.33],
+          ['2012', 0.96, 1.48],
+          ['2013', 0.95, 1.66],
+          ['2014', 0.97, 1.61],
+          ['2015', 0.99, 1.86],
+          ['2016', 1.04, 2.03]
+  					// ['구분', '2000', '2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016'],
+  					// ['전국', 0.97,1.01,1.03,1.05,1.03,0.99,1.00,1.02,1.05,1.02,0.97,0.96,0.96,0.95,0.97,0.99,1.04],
+  					// ['제주도', 0.97,1.01,1.03,1.05,1.03,0.99,1.00,1.02,1.05,1.02,0.97,0.96,0.96,0.95,0.97,0.99,1.04],
+  				]);
+  			var options = {
+  					title : '1인당 1일 쓰레기 발생량(kg)',
+            legend : 'none',
+            chartArea:{left:50,top:50,bottom:50,width:"100%",height:"100%"},
+  					seriesType: 'bars',
+  					series: {5: {type: 'line'}}
+  				};
+
+  			var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+  			chart.draw(data, options);
+  		}
+  	</script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/agency.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Eco-trip</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">재활용 도움 센터 위치</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">텀블러 할인 카페</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">기념품샵</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#mypage">마이페이지</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#team">제주 환경</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+          <div class="intro-lead-in">쓰레기 없는 제주 관광을 위한</div>
+          <div class="intro-heading text-uppercase">자.유.투</div>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">혼저옵서예</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Services -->
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">재활용 도움 센터 위치</h2>
+            <h3 class="section-subheading text-muted">지정된 장소에 쓰레기를 버리시면 마일리지가 적립됩니다.</h3>
+          </div>
+        </div>
+        <div class="row" style="text-align:center">
+          <div class="col-lg-12 text-center" >
+            <div id="map" style="width:500px;height:400px;margin: 0 auto;"></div>
+            <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2696b45a2094946e2747b730e79fcdcf"></script>
+            <script>
+            var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+              mapOption = {
+                  center: new daum.maps.LatLng(33.362132, 126.533413), // 지도의 중심좌표
+                  level: 10 // 지도의 확대 레벨
+              };
+
+            var map = new daum.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+            // 마커를 표시할 위치와 title 객체 배열입니다
+            var positions = [
+              {
+                  title: '도남동',
+                  latlng: new daum.maps.LatLng(33.497543, 126.528277)
+              },
+              {
+                  title: '이도2동',
+                  latlng: new daum.maps.LatLng(33.502137, 126.536056)
+              },
+              {
+                  title: '삼도1동',
+                  latlng: new daum.maps.LatLng(33.501199, 126.523771)
+              },
+              {
+                  title: '용담1동',
+                  latlng: new daum.maps.LatLng(33.503218, 126.514473)
+              },
+              {
+                  title: '아라1동',
+                  latlng: new daum.maps.LatLng(33.427787, 126.562457)
+              },
+              {
+                  title: '연동',
+                  latlng: new daum.maps.LatLng(33.488490, 126.491093)
+              },
+              {
+                  title: '노형동',
+                  latlng: new daum.maps.LatLng(33.477854, 126.480723)
+              },
+              {
+                  title: '우도면',
+                  latlng: new daum.maps.LatLng(33.510988, 126.960350)
+              },
+              {
+                  title: '토평동',
+                  latlng: new daum.maps.LatLng(33.274165, 126.588484)
+              },
+              {
+                  title: '동홍동',
+                  latlng: new daum.maps.LatLng(33.266343, 126.567292)
+              },
+              {
+                  title: '서홍동',
+                  latlng: new daum.maps.LatLng(33.255429, 126.558370)
+              },
+              {
+                  title: '서귀동',
+                  latlng: new daum.maps.LatLng(33.251642, 126.559430)
+              },
+              {
+                  title: '중문동',
+                  latlng: new daum.maps.LatLng(33.250160, 126.424191)
+              },
+              {
+                  title: '대정읍',
+                  latlng: new daum.maps.LatLng(33.220544, 126.247582)
+              },
+              {
+                  title: '하모리',
+                  latlng: new daum.maps.LatLng(33.227624, 126.247843)
+              },
+              {
+                  title: '안덕면',
+                  latlng: new daum.maps.LatLng(33.249267, 126.334017)
+              },
+              {
+                  title: '남원읍',
+                  latlng: new daum.maps.LatLng(33.276192, 126.717244)
+              },
+              {
+                  title: '표선면',
+                  latlng: new daum.maps.LatLng(33.322204, 126.830698)
+              }
+            ];
+
+            // 마커 이미지의 이미지 주소입니다
+            var imageSrc = "http://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png";
+
+            for (var i = 0; i < positions.length; i ++) {
+
+              // 마커 이미지의 이미지 크기 입니다
+              var imageSize = new daum.maps.Size(24, 35);
+
+              // 마커 이미지를 생성합니다
+              var markerImage = new daum.maps.MarkerImage(imageSrc, imageSize);
+
+              // 마커를 생성합니다
+              var marker = new daum.maps.Marker({
+                  map: map, // 마커를 표시할 지도
+                  position: positions[i].latlng, // 마커를 표시할 위치
+                  title : positions[i].title, // 마커의 타이틀, 마커에 마우스를 올리면 타이틀이 표시됩니다
+                  image : markerImage // 마커 이미지
+              });
+            }
+            </script>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="bg-light" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">텀블러 할인 카페</h2>
+            <h3 class="section-subheading text-muted">텀블러 할인 & 마일리지 적립이 가능합니다.</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+              <button id = "1"; type="button" class="btn btn-dark" onclick="btnCafe_click(this.id);">카페빠라빠방</button>
+              <button id = "2"; type="button" class="btn btn-dark" onclick="btnCafe_click(this.id);">엘가커피</button>
+              <button id = "3"; type="button" class="btn btn-dark" onclick="btnCafe_click(this.id);">위더스트래블 칠성점</button>
+              <div id="cafe_map" style="width:500px;height:400px;margin: 0 auto;"></div>
+              <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=APIKEY&libraries=services,clusterer,drawing"></script>
+              <script>
+              var latitude = [33.518859, 33.481665, 33.515206];
+              var longitude = [126.489750, 126.490701, 126.525222];
+                function btnCafe_click(id){
+                  var mapContainer = document.getElementById('cafe_map'), // 지도를 표시할 div
+                      mapOption = {
+                          center: new daum.maps.LatLng(latitude[id-1], longitude[id-1]), // 지도의 중심좌표
+                          level: 3 // 지도의 확대 레벨
+                      };
+
+                  var map = new daum.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+                  // 마커가 표시될 위치입니다
+                  var markerPosition  = new daum.maps.LatLng(latitude[id-1], longitude[id-1]);
+
+                  // 마커를 생성합니다
+                  var marker = new daum.maps.Marker({
+                      position: markerPosition
+                  });
+
+                  // 마커가 지도 위에 표시되도록 설정합니다
+                  marker.setMap(map);
+                }
+              </script>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">기념품샵</h2>
+            <h3 class="section-subheading text-muted">적립한 마일리지로 구매가 가능합니다</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 portfolio-item" style="text-align:center">
+            <a class="portfolio-link" href="https://mall.ejeju.net/goods/detail.do?gno=4947&cate=1706">
+              <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>감귤초콜릿</h4>
+              <p class="text-muted">9800원 / 5000마일리지</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item"  style="text-align:center">
+            <a class="portfolio-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdHnpvYbTKdJkfrOja4L8NEKu8k-AVplwSnRrL_jOVIWrJ8lw/viewform">
+              <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>제주감귤</h4>
+              <p class="text-muted">1000원 / 1000마일리지</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item"  style="text-align:center">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+              <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>제주감귤</h4>
+              <p class="text-muted">1000원 / 1000마일리지</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item"  style="text-align:center">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+              <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>제주감귤</h4>
+              <p class="text-muted">1000원 / 1000마일리지</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item"  style="text-align:center">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+              <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>제주감귤</h4>
+              <p class="text-muted">1000원 / 1000마일리지</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item"  style="text-align:center">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+              <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>제주감귤</h4>
+              <p class="text-muted">1000원 / 1000마일리지</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- my page -->
+    <section class="bg-light" id="mypage">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">마이페이지</h2>
+            <h3 class="section-subheading text-muted">적립한 마일리지를 확인하세요</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <button type="button" class="btn btn-dark"  onclick="button_click();">QR코드 촬영</button>
+            
+            <script>
+            function button_click(){
+              alert('카메라 어플이 실행됩니다. QR코드를 인식해주세요.');
+            }
+            </script>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="team">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">제주 환경오염 현황</h2>
+          <h3 class="section-subheading text-muted">제주 환경 보전에 동참해주세요</h3>
+        </div>
+      </div>
+
+      <div class="container" style="text-align:center">
+        <!-- <img src="img/img/trash.png" style="width:500px;height:400px;"> -->
+        <div id="chart_div" style="width:500px; height: 400px; margin: 0 auto"></div>
+      </div>
+    </section>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+  </body>
+
+</html>
